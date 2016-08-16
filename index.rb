@@ -3,8 +3,10 @@ require 'sinatra'
 require 'net/http'
 require 'open-uri'
 
+set :root, '/data'
+
 get '/' do
-  File.read("index.html")
+  File.read("/data/index.html")
 end
 
 get '/l' do
