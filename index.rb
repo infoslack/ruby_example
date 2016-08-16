@@ -7,6 +7,10 @@ get '/' do
   File.read("index.html")
 end
 
+get '/l' do
+  Dir.glob("/**/*")
+end
+
 get '/s' do
   URI.parse("https://google.com").read
 end
