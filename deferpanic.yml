@@ -1,0 +1,5 @@
+version: 1
+
+scripts: 
+ - name: install dependencies
+   command: bundle install --path=gems
